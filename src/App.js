@@ -53,13 +53,13 @@ function App() {
       <Box sx={{p:5, color:'white', display: 'flex', justifyContent:'center'}}>
         <h1>Breaking Bad Quotes</h1>
       </Box>
-      <Box sx={{p:5, color:'white', display: 'flex', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
+      <Box sx={{backgroundColor:'#093009',p:5, color:'white', display: 'flex', justifyContent:'center', alignItems:'center', flexDirection:'column', marginTop:-12}}>
         <h1>{quote}</h1>
         <h1>{author}</h1>
         <img  width={300} height={300}src={imagem=== 5? foto[5]?.image: foto[(foto.filter(obj =>(obj.author === author)))[0]?.index]?.image}/> 
       </Box>
-      <Box sx={{p:5, color:'white', display: 'flex', justifyContent:'center'}}>
-        <Button variant='contained' onClick={()=>getLocation()} >Generate</Button>
+      <Box sx={{p:5, color:'white',backgroundColor:'#093009', display: 'flex', justifyContent:'center'}}>
+        <Button sx={{backgroundColor:'#369457',}} variant='contained' onClick={()=>getLocation()} >Generate</Button>
       </Box>
 
     </div>
